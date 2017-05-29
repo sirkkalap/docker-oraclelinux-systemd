@@ -1,6 +1,6 @@
-#  Official CentOS systemd docker container
+#  Unofficial Oracle Linux systemd docker container
 
-The container was created as a base container for systemd based services. There is a sample containter that makes use of this image (https://github.com/xrowgmbh/docker-systemd-example-httpd).
+The container was created based on (https://github.com/CentOS/CentOS-Dockerfiles/tree/master/systemd/centos7).
 
 ## Sample httpd container
 
@@ -9,7 +9,7 @@ Here we show you how we can create a sample httpd container.
 Frist create a Dockerfile and setup the required service or services. Systemd can launch multiple services.
 
 ```
-FROM centos/systemd
+FROM sirkkalap/oraclelinux-systemd
 
 MAINTAINER "Your Name" <you@example.com>
 
